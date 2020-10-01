@@ -1,0 +1,33 @@
+$icons: (
+  ('close' '\e902' 1.25rem $c-black),
+  ('phone' '\e900' 2rem #fff),
+  ('phone-footer' '\e900' 1.2rem $c-black),
+  ('ticket' '\e901' 1.9rem $c-yellow),
+  ('call' '\e90a' 1.9rem $c-yellow),
+  ('email' '\e910' 1rem $c-black),
+  ('vk' '\e909' 1.5rem #fff),
+  ('fb' '\e911' 1.5rem #fff),
+  ('in' '\e912' 1.5rem #fff),
+  ('vk-black' '\e909' 1.5rem $c-black),
+  ('fb-black' '\e911' 1.5rem $c-black),
+  ('in-black' '\e912' 1.5rem $c-black),
+  ('burger' '\e914' 1rem $c-black),
+  ('map' '\e913' 1rem $c-black),
+);
+
+.icon {
+  font-family: 'icomoon';
+  font-size: 1rem;
+  font-style: normal;
+
+  @each $icon in $icons {
+    &_#{nth($icon, 1)} {
+      font-size: nth($icon, 3);
+      color: nth($icon, 4);
+
+      &:before{
+        content: nth($icon, 2);
+      }
+    }
+  }
+}

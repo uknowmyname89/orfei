@@ -1,0 +1,254 @@
+body {
+  font-family: $font-family-sans-serif;
+  color: $c-black;
+  font-size: $txt-16px;
+  line-height: normal;
+  text-align: left;
+  padding: 0!important;
+  @extend %anim;
+  &.modal-open{
+    overflow: auto;
+  }
+  p, a, input, textarea, li, td {
+    font-size: $txt-16px;
+    font-family: $font-family-sans-serif;
+    color: $c-black;
+    font-weight: normal;
+    line-height: normal;
+  }
+
+  a {
+    color: $c-red; text-decoration: underline;
+    @extend %anim;
+    outline: none!important;
+    &:hover{
+      text-decoration: none!important;
+      color: darken($c-red, 30%);
+    }
+    &.txt-c-yellow:hover{
+      color: #fff;
+    }
+  }
+}
+.scroll-lock{
+  overflow: hidden;
+}
+
+h1, .h1{
+  font-weight: bold;
+  color: $c-black;
+  font-size: $txt-58px;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 2.15rem;
+}
+h2, .h2{
+  font-weight: normal;
+  color: $c-black;
+  text-transform: uppercase;
+  font-size: $txt-32px;
+  margin-bottom: 1.5rem;
+}
+h3, .h3{
+  font-weight: bold;
+  color: $c-black;
+  font-size: $txt-24px;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 2.15rem;
+}
+
+hr{
+  margin: 1.5rem 0;
+}
+
+iframe {
+  max-width: 100%;
+}
+.container{position: relative;}
+.bg-black {
+  background: $c-black;
+}
+.bg-red {
+  background: $c-red;
+}
+.bg-gradient {
+  background: $c-gradient;
+}
+.bg-gray {
+  background: $c-gray;
+}
+.breadcrumbs{
+  margin-bottom: 2rem;
+}
+.menu-list-item{
+  font-size: $txt_12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $c-black;
+  &.active, &:hover {
+    color: $c-red;
+  }
+}
+
+.nav {
+  flex-wrap: nowrap;
+  overflow: auto;
+  li {
+    a{
+      white-space: nowrap!important;
+    }
+    &:before {
+      display: none;
+    }
+  }
+}
+ol {
+  list-style-position: inside;
+  padding-left: 0;
+  li {
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  &.big{
+    li {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
+      font-size: $txt_22px;
+    }
+  }
+}
+
+ul {
+  list-style-position: inside;
+  list-style-type: none;
+  padding-left: 0;
+  li {
+    margin-bottom: 0.5rem;
+    ul {
+      padding: 1rem 1rem 0.5rem;
+      li {
+        margin-bottom: 0.5rem;
+        &:before {
+          display: none;
+        }
+      }
+      ul {
+        padding: 1rem 0 0.5rem;
+        margin: 1rem 0 0 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        li {
+          a {
+            color: $gray-500!important;
+            &.active, &:hover {
+              color: $c-red;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.row-scroll-always {
+  overflow-x: auto;
+  white-space: nowrap;
+  display: block;
+  user-select: none;
+  @extend %anim;
+  will-change: transform;
+  cursor: pointer;
+  scrollbar-color: $c-red;
+  scrollbar-width: 10px;
+  >div{
+    @extend %anim;
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+    &:first-child{
+      padding-left: 0;
+    }
+    &:last-child{
+      padding-right: 0;
+    }
+  }
+}
+
+.object-fit-cover{
+  object-fit: cover;
+}
+
+.wrapper-bg{
+  background: url('#{$path-assets}/img/curtains.jpg') no-repeat center center;
+  background-size: cover;
+  border-radius: 0px 0px 10rem 10rem;
+  box-shadow: 0px 12px 55px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  @media(max-width:991px) {
+    border-radius: 0px 0px 3rem 3rem;
+  }
+}
+.space{
+  min-height: 7rem;
+}
+@media(max-width:991px) {
+  h1, .h1{
+    font-size: $txt_30px;
+  }
+  h2, .h2{
+    font-size: $txt-24px;
+  }
+  h3, .h3{
+    font-size: $txt-18px;
+  }
+  .row-scroll{
+    overflow-x: auto;
+    white-space: nowrap;
+    display: block;
+
+    -webkit-overflow-scrolling: touch;
+    -webkit-transform: translateZ(0px);
+
+    >div{
+      display: inline-block;
+      vertical-align: top;
+      white-space: normal;
+    }
+    &.align-items-center {
+      >div{
+        vertical-align: middle;
+      }
+    }
+
+    &.row-visible-next{
+      > div {
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media(min-width:992px) {
+  /* scrollbar */
+  ::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    box-shadow: none;
+    border-radius: 10px;
+    background: #fff;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $c-red;
+    border: 2px solid #fff;
+    border-radius: 10px;
+  }
+}
+

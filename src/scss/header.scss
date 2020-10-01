@@ -1,0 +1,67 @@
+.header{
+  &__logo{
+    @media(max-width:991px) {
+      width: 12rem;
+      margin: 0rem 0px 3rem -6px;
+    }
+  }
+  a {
+    color: #fff;
+    &.link{
+      color: $c-yellow;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      &.call{
+        @media(max-width:991px) {
+          display: none;
+        }
+      }
+      @media(min-width:992px) {
+        font-size: $txt_22px;
+      }
+      i {
+        margin-right: 0.7rem;
+        &:before {
+          color: $c-yellow;
+        }
+      }
+    }
+  }
+  .phone{
+    display: none;
+    @media(min-width:992px) {
+      display: flex;
+      margin-top: 2rem;
+      align-items: center;
+    }
+    i{
+      margin-left: 0.1rem;
+      margin-right: 0.7rem;
+    }
+    a{
+      font-size: $txt_16px;
+      text-decoration: none;
+      &:hover {
+
+      }
+    }
+  }
+  .social{
+    @media(min-width:992px) {
+      margin-top: 2rem;
+      display: flex;
+    }
+    a{
+      text-decoration: none;
+      margin-right: 1rem;
+      &:hover{
+        :before{
+          color: $c-yellow;
+          @extend %anim;
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,39 @@
+.pagination{
+  margin: 2rem 0 0;
+  align-items: center;
+  padding: 0 0.3rem;
+  .page-item{
+    margin: 0.2rem;
+    @extend %anim;
+    &:before{
+      display: none;
+    }
+    &:hover, &.active{
+      a{
+        color: $c-red;
+      }
+    }
+    .page-link{
+      text-decoration: none;
+      background: transparent;
+      border: 0;
+      padding: 0.2rem 0.5rem;
+      outline: none;
+      box-shadow: none;
+      color: $c-black;
+      font-size: $txt_24px;
+    }
+  }
+  &__start{
+    &:after{
+      content: "«";
+      font-size: 1.2rem;
+    }
+  }
+  &__end{
+    &:after{
+      content: "»";
+      font-size: 1.2rem;
+    }
+  }
+}

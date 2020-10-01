@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Demo Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <div class="wrapper-bg mb-4">
+    <section id="header">
+      <%- include modules/modal-loader.ejs %>
+      <%- include modules/header.ejs %>
+    </section>
+    <section id="menu">
+      <%- include modules/menu.ejs %>
+    </section>
+    <div class="space"></div>
+  </div>
+  <section id="content">
+    <div class="py-5">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="/">Главная</a>  »  Новости
+        </div>
+        <h1>
+          Новости
+        </h1>
+        <div class="row row-scroll">
+          <% for(var i = 0; i < 3; i++){ %>
+            <%- include elements/news.ejs %>
+          <% } %>
+        </div>
+        <%- include elements/paginator.ejs %>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section id="footer">
+    <%- include modules/footer.ejs %>
+  </section>
+</body>
+</html>

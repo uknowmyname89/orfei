@@ -1,0 +1,39 @@
+.youtube{
+  border-radius: 80px;
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.1);
+  margin-bottom: -4rem;
+  &__holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 80px;
+    height: 100%;
+    z-index: 0;
+    .img{
+      width: 100%;
+      min-height: 15rem;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.8;
+      border-radius: 80px;
+      border: 3px solid #fff;
+    }
+    .play{
+      position: absolute;
+      z-index: 1;
+    }
+  }
+  &__text{
+    *{
+      color: #fff;
+    }
+    a{
+      font-size: $txt_16px;
+    }
+  }
+}
+
+.news-main{
+  padding: 5rem 0;
+}

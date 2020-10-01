@@ -1,0 +1,30 @@
+.news-item{
+  position: relative;
+  .img-holder{
+    img{
+      border-radius: 6px;
+      height: 11rem;
+      width: 100%;
+      margin: 1rem 0;
+      object-fit: cover;
+    }
+  }
+  &__name{
+    height: 2.8rem;
+    overflow: hidden;
+    position: relative;
+    a {
+      font-weight: bold;
+      font-size: $txt_16px;
+      color: $c-black;
+    }
+  }
+  &__text{
+    height: 4.3rem;
+    margin: 0.5rem 0;
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+

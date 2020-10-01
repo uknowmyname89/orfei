@@ -1,0 +1,29 @@
+.dates-block{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: $txt_18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: 30rem;
+  margin: auto;
+  @media(max-width:767px) {
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    .name{
+      width: 100%;
+      margin: -1rem 0 1rem;
+      font-size: $txt_16px;
+    }
+    input{
+      width: 8rem;
+    }
+  }
+}
+
+.active.day {
+  background: $c-gradient!important;
+  color: $c-black!important;;
+}
