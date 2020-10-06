@@ -1,15 +1,17 @@
 .btn {
-  padding: 0.25rem 0.7rem;
+  border-radius: 6px;
+  padding: 0.4rem;
   color: $c-black;
   background: #fff;
-  border: 1px solid $c-black;
-  border-radius: 4px;
+  border: 2px solid $c-black;
   overflow: hidden;
   box-shadow: none!important;
   text-decoration: none!important;
   max-width: 100%;
   white-space: normal;
-  font-size: $txt_14px;
+  font-size: $txt_12px;
+  text-transform: uppercase;
+  line-height: normal;
   outline: none;
   min-height: 2rem;
   text-align: center;
