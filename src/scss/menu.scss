@@ -19,8 +19,12 @@
   text-transform: uppercase;
   border: 2px solid transparent;
   border-radius: 6px;
-  padding: 0.4rem;
+  padding: 0.5rem 0.4rem 0.4rem;
   display: block;
+  font-weight: bold;
+  @media(max-width:1199px) {
+    font-weight: normal;
+  }
   @media(max-width:991px) {
     border: none!important;
     padding: 0!important;
