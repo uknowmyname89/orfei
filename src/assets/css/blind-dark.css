@@ -1,0 +1,107 @@
+body{
+  background: #000;
+}
+#slider {
+  margin-bottom: -4rem;
+}
+h1, .h1{
+  color: #fff;
+}
+h2, .h2{
+  color: #fff;
+}
+h3, .h3{
+  color: #fff;
+}
+#content *{
+  color: #fff!important;
+}
+datepicker-days *{
+  color: #000!important;
+}
+body p, body a, body li {
+  color: #fff!important;
+}
+body input, body textarea, body select {
+  color: #000!important;
+}
+#content input, #content textarea, #content select {
+  color: #000!important;
+}
+body .txt-c-black {
+  color: #fff!important;
+}
+body .menu-fixed{
+  background: #fff;
+}
+body .menu-fixed *{
+  color: #000!important;
+}
+body .txt-c-gray {
+  color: #fff!important;
+}
+body .txt-c-red {
+  color: #fff!important;
+}
+body a, body p, body .txt-c-gray, ul li {
+  color: #fff!important;
+}
+.prod-item__name:before, .prod-item__text:before {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 24.88%, black 100%);
+}
+
+img{ filter: grayscale(1); -webkit-filter: grayscale(1); -moz-filter: grayscale(1); -o-filter: grayscale(1); -ms-filter: grayscale(1);}
+*{
+  box-shadow: none!important; border-radius: 0!important;border: 0;
+}
+a{
+  text-decoration: underline!important;color: #000!important;
+}
+.bg-red, .prod-item__mark, #content .btn, .btn.red, .btn.red:hover {
+  background: #000;
+  color: #fff!important;
+  border: 0;
+}
+#content .btn {
+  background: #fff;
+  color: #000!important;
+  border: 0;
+}
+.bg-gradient {
+  background: #000;
+}
+.txt-c-gray{
+  color: #000;
+}
+.wrapper-bg {
+  background: none;
+}
+.txt-c-red{
+  color: #000!important;
+}
+i:before{
+  color: #000!important;
+}
+.object-gallery .slick-gallery__full .slick-slide .text {
+  background: #000;
+}
+.object-gallery .slick-gallery__full .slick-slide .text *{
+  color: #fff!important;
+}
+.header {
+  background: #000;
+}
+.header *{
+  color: #fff!important;
+}
+
+.header i:before{
+  color: #fff!important;
+}
+
+.slick-dots li {
+  border: 2px solid #fff;
+}
+.slick-dots li.slick-active {
+  background: #fff;
+}

@@ -48,10 +48,9 @@
     }
   }
   .social{
-    @media(min-width:992px) {
-      margin-top: 2rem;
-      display: flex;
-    }
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
     a{
       text-decoration: none;
       margin-right: 0.5rem;

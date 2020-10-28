@@ -20,6 +20,7 @@
     background: $c-gradient;
     font-size: $txt_14px;
     position: absolute;
+    z-index: 1;
   }
   &__name{
     height: 2.8rem;

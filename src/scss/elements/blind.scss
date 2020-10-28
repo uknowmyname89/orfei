@@ -1,0 +1,32 @@
+.blind-trigger{
+  img{
+    width: 2.4rem;
+  }
+}
+.blind-line{
+  max-height: 200px; background: white; overflow: hidden; transition: max-height .25s;
+  a { text-decoration: none!important; }
+  .wrapper { width: 960px; margin: auto;
+    &:before { content: ''; height: 50px; }
+  }
+  &.hidden { visibility: visible !important; display: block !important; max-height: 0; margin-bottom: 0px; }
+  .contrast-control, .blind-line .size-control, .blind-line .wrapper:before { display: inline-block; vertical-align: middle; }
+  .get-back { float: right;
+    a { display: block; font-size: 16px!important; padding: 12px 0; color: #000 !important; text-decoration: underline; }
+  }
+  .contrast-control {
+    a { width: 27px; height: 27px; line-height: 27px; font-size: 18px; font-weight: bold; margin-right: 5px; border-radius: 4px; text-align: center; display: inline-block; border: 1px solid black;
+      &.black-and-white { background: white; color: black !important; }
+      &.white-and-black { background: black; color: white !important; }
+    }
+  }
+  .size-control { margin-left: 30px;
+    a { color: black !important; line-height: 20px;  margin-right: 17px; font-weight: bold;
+      &.active { position: relative; }
+      &.active:after { content: ''; height: 2px; position: absolute; bottom: -5px; left: 0; width: 100%; background: black; }
+      &.font_s { font-size: 16px!important; }
+      &.font_m { font-size: 22px!important; }
+      &.font_l { font-size: 26px!important; }
+    }
+  }
+}
