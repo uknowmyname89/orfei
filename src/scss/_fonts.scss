@@ -1,27 +1,27 @@
 @font-face {
-  font-family: 'PT Astra Sans';
-  src: local('PT Astra Sans'), local('PTAstraSans-Regular'),
-  url('#{$path-fonts}/Ptastrasans.woff') format('woff'),
-  url('#{$path-fonts}/Ptastrasans.woff2') format('woff2'),
-  url('#{$path-fonts}/Ptastrasans.ttf') format('truetype');
+  font-family: 'IBM Plex Serif';
+  src: local('IBM Plex Serif'), local('IBMPlexSerif-Regular'),
+  url('#{$path-fonts}/IBMPlexSerif.woff') format('woff'),
+  url('#{$path-fonts}/IBMPlexSerif.eot') format('eot'),
+  url('#{$path-fonts}/IBMPlexSerif.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'PT Astra Sans';
-  src: local('PT Astra Sans Italic'), local('PTAstraSans-Italic'),
-  url('#{$path-fonts}/Ptastrasansitalic.woff') format('woff'),
-  url('#{$path-fonts}/Ptastrasansitalic.woff2') format('woff2'),
-  url('#{$path-fonts}/Ptastrasansitalic.ttf') format('truetype');
+  font-family: 'IBM Plex Serif';
+  src: local('IBM Plex Serif Italic'), local('IBMPlexSerif-Italic'),
+  url('#{$path-fonts}/IBMPlexSerif-Italic.woff') format('woff'),
+  url('#{$path-fonts}/IBMPlexSerif-Italic.eot') format('eot'),
+  url('#{$path-fonts}/IBMPlexSerif-Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
-  font-family: 'PT Astra Sans';
-  src: local('PT Astra Sans Bold'), local('PTAstraSans-Bold'),
-  url('#{$path-fonts}/Ptastrasansbold.woff') format('woff'),
-  url('#{$path-fonts}/Ptastrasansbold.woff2') format('woff2'),
-  url('#{$path-fonts}/Ptastrasansbold.ttf') format('truetype');
+  font-family: 'IBM Plex Serif';
+  src: local('PT Astra Sans SemiBold'), local('IBMPlexSerif-SemiBold'),
+  url('#{$path-fonts}/IBMPlexSerif-SemiBold.woff') format('woff'),
+  url('#{$path-fonts}/IBMPlexSerif-SemiBold.eot') format('eot'),
+  url('#{$path-fonts}/IBMPlexSerif-SemiBold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
