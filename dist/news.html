@@ -4,7 +4,7 @@
   <title>Demo Page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="index-4347b55a723211e095a3.min.css" rel="stylesheet"></head>
+<link href="index-c8aa76b3b6a84ac5812f.min.css" rel="stylesheet"></head>
 <body>
   <div class="wrapper-bg mb-4">
     <section id="header">
@@ -19,12 +19,50 @@
     </div>
 </div>
 
-      <div class="header py-5">
+      <div class="blind-line hidden">
+  <div class="container py-3">
+    <div class="d-flex align-items-center">
+      <div class="d-flex contrast-control align-items-center">
+        <a
+          href="#css-back"
+          data-css="blind-dark"
+          class="black-and-white active css-trigger"
+          >А</a
+        >
+        <a
+          href="#css-back"
+          data-css="blind-light"
+          class="white-and-black css-trigger"
+          >А</a
+        >
+      </div>
+      <div class="d-flex size-control align-items-center">
+        <a href="#css-font" data-css="blind-s" class="font_s active css-trigger"
+          >А</a
+        >
+        <a href="#css-font" data-css="blind-m" class="font_m css-trigger">А</a>
+        <a href="#css-font" data-css="blind-l" class="font_l css-trigger">А</a>
+      </div>
+      <a href="#" class="blind-trigger ml-auto d-flex align-items-center">
+        <img class="mr-2" src="./assets/vectors/reading.svg"
+      /></a>
+    </div>
+  </div>
+</div>
+
+<div class="header py-5">
   <div class="container">
     <div class="row align-items-center justify-content-center">
-      <div class="col-auto col-lg-4 order-1 order-lg-0 d-flex justify-content-lg-end">
+      <div
+        class="col-auto col-lg-4 order-1 order-lg-0 d-flex justify-content-lg-end"
+      >
         <div>
-          <a href="#" class="ajax-modal link" data-target="#modal" data-remote="/buy.html">
+          <a
+            href="#"
+            class="ajax-modal link"
+            data-target="#modal"
+            data-remote="/buy.html"
+          >
             <i class="icon icon_ticket"></i>
             Купить билет
           </a>
@@ -37,11 +75,18 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4  order-0 order-lg-1 text-center">
-        <a href="/"><img class="header__logo" src="assets/vectors/logo.svg" alt=""></a>
+      <div class="col-lg-4 order-0 order-lg-1 text-center">
+        <a href="/"
+          ><img class="header__logo" src="assets/vectors/logo.svg" alt=""
+        /></a>
       </div>
       <div class="col-auto col-lg-4 order-2">
-        <a href="#" class="ajax-modal link call" data-target="#modal" data-remote="/callback.html">
+        <a
+          href="#"
+          class="ajax-modal link call"
+          data-target="#modal"
+          data-remote="/callback.html"
+        >
           <i class="icon icon_call"></i>
           Заказать звонок
         </a>
@@ -49,6 +94,9 @@
           <a href="#"><i class="icon icon_in"></i></a>
           <a href="#"><i class="icon icon_vk"></i></a>
           <a href="#"><i class="icon icon_fb"></i></a>
+          <a href="#" class="blind-trigger m-3"
+            ><img src="./assets/vectors/reading_w.svg"
+          /></a>
         </div>
       </div>
     </div>
@@ -57,55 +105,73 @@
 
     </section>
     <section id="menu">
-      
-<div class="bg-gradient py-3 main-menu menu-fixed">
-    <div class="container">
-        <div class="d-lg-none">
-            <a href="#" data-toggle-main-menu class="icon icon_close"></a>
-            <p class="h2 mt-5">Меню</p>
-        </div>
-        <div class="row m-0 justify-content-between align-items-center">
-            <div class="col-lg-auto"><a class="menu-item active" href="#">О театре</a></div>
-            <div class="col-lg-auto"><a class="menu-item" href="#">Афиша</a></div>
-            <div class="col-lg-auto">
-                <a class="menu-item" href="#">Театральные Ассамблеи</a>
-                <div class="dropdown">
-                    <div class="bg-gradient">
-                        <ul>
-                            <li><a href="#">История создания</a></li>
-                            <li><a href="#">Письма от друзей, коллег</a></li>
-                            <li><a href="#">Расписание занятий</a></li>
-                            <li><a href="#">Независимая оценка качества оказания услуг организациями культуры</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-auto"><a class="menu-item" href="#">Обучение детей</a></div>
-            <div class="col-lg-auto"><a class="menu-item" href="#">Касса</a></div>
-            <div class="col-lg-auto"><a class="menu-item" href="#">Контакты</a></div>
-            <div class="col-lg-auto"><a class="menu-item" href="#">Обратная связь</a></div>
-            <div class="col-lg-auto"><a class="btn red ajax-modal link txt_12px" href="#" data-target="#modal" data-remote="/buy.html">КУПИТЬ БИЛЕТ</a></div>
-        </div>
+      <div class="bg-gradient py-3 main-menu menu-fixed">
+  <div class="container">
+    <div class="d-lg-none">
+      <a href="#" data-toggle-main-menu class="icon icon_close"></a>
+      <p class="h2 mt-5">Меню</p>
     </div>
+    <div class="row m-0 justify-content-between align-items-center">
+      <div class="col-lg-auto">
+        <a class="menu-item active" href="#">О театре</a>
+      </div>
+      <div class="col-lg-auto"><a class="menu-item" href="#">Афиша</a></div>
+      <div class="col-lg-auto">
+        <a class="menu-item" href="#">Театральные Ассамблеи</a>
+        <div class="dropdown">
+          <div class="bg-gradient">
+            <ul>
+              <li><a href="#">История создания</a></li>
+              <li><a href="#">Письма от друзей, коллег</a></li>
+              <li><a href="#">Расписание занятий</a></li>
+              <li>
+                <a href="#"
+                  >Независимая оценка качества оказания услуг организациями
+                  культуры</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-auto">
+        <a class="menu-item" href="#">Обучение детей</a>
+      </div>
+      <div class="col-lg-auto"><a class="menu-item" href="#">Касса</a></div>
+      <div class="col-lg-auto"><a class="menu-item" href="#">Контакты</a></div>
+      <div class="col-lg-auto">
+        <a class="menu-item" href="#">Обратная связь</a>
+      </div>
+      <div class="col-lg-auto">
+        <a
+          class="btn red ajax-modal link txt_12px"
+          href="#"
+          data-target="#modal"
+          data-remote="/buy.html"
+          >КУПИТЬ БИЛЕТ</a
+        >
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="bg-gradient py-3 mobile-menu d-lg-none menu-fixed">
-    <div class="container">
-        <div class="row">
-            <div class="col-auto d-flex align-items-center">
-                <a href="#" data-toggle-main-menu class="icon icon_burger"></a>
-            </div>
-            <div class="col-auto ml-auto d-flex align-items-center">
-                <div class="phone">
-                    <i class="icon icon_phone"></i>
-                    <div>
-                        <div><a href="tel:+79031001550">+7 (903) 100-15-50</a></div>
-                        <div><a href="tel:+74955058656">+7 (495) 505-86-56</a></div>
-                    </div>
-                </div>
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-auto d-flex align-items-center">
+        <a href="#" data-toggle-main-menu class="icon icon_burger"></a>
+      </div>
+      <div class="col-auto ml-auto d-flex align-items-center">
+        <div class="phone">
+          <i class="icon icon_phone"></i>
+          <div>
+            <div><a href="tel:+79031001550">+7 (903) 100-15-50</a></div>
+            <div><a href="tel:+74955058656">+7 (495) 505-86-56</a></div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </div>
 
     </section>
@@ -344,5 +410,5 @@
 </div>
 
   </section>
-<script type="text/javascript" src="index-4347b55a723211e095a3.min.js"></script><script type="text/javascript" src="utils-4347b55a723211e095a3.min.js"></script><script type="text/javascript" src="slider-4347b55a723211e095a3.min.js"></script><script type="text/javascript" src="dates-4347b55a723211e095a3.min.js"></script></body>
+<script type="text/javascript" src="index-c8aa76b3b6a84ac5812f.min.js"></script><script type="text/javascript" src="utils-c8aa76b3b6a84ac5812f.min.js"></script><script type="text/javascript" src="slider-c8aa76b3b6a84ac5812f.min.js"></script><script type="text/javascript" src="dates-c8aa76b3b6a84ac5812f.min.js"></script></body>
 </html>
