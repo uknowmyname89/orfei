@@ -1,77 +1,83 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Demo Page</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-</head>
-<body>
-  <div class="wrapper-bg mb-4">
-    <section id="header">
-      <%- include modules/modal-loader.ejs %>
-      <%- include modules/header.ejs %>
+  <head>
+    <title>Demo Page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="wrapper-bg mb-4">
+      <section id="header">
+        <%- include modules/modal-loader.ejs %> <%- include modules/header.ejs
+        %>
+      </section>
+      <section id="menu"><%- include modules/menu.ejs %></section>
+      <section id="slider"><%- include modules/slider.ejs %></section>
+    </div>
+    <section id="content">
+      <div class="py-5">
+        <div class="container">
+          <h1 class="text-center">АФИША</h1>
+          <div class="dates-block">
+            <div class="name">Дата проведения:</div>
+            <input
+              type="text"
+              class="form-control ml-2 dpicker"
+              value="13.09.2020"
+            />
+            <div class="mx-2">-</div>
+            <input
+              type="text"
+              class="form-control dpicker"
+              value="15.09.2020"
+            />
+          </div>
+          <div class="row row-scroll pt-4" id="items-container">
+            <% for(var i = 0; i < 2; i++){ %> <%- include elements/item.ejs %>
+            <% } %>
+          </div>
+        </div>
+      </div>
     </section>
-    <section id="menu">
-      <%- include modules/menu.ejs %>
-    </section>
-    <section id="slider">
-      <%- include modules/slider.ejs %>
-    </section>
-  </div>
-  <section id="content">
-     <div class="py-5">
+    <div class="container">
+      <div class="youtube bg-red">
+        <div class="row">
+          <div class="col-lg-4">
+            <a href="" class="youtube__holder">
+              <img class="play" src="./assets/vectors/play.svg" />
+              <img
+                class="img"
+                src="./assets/example/pic2.jpg"
+                alt="Вишнёвый сад"
+              />
+            </a>
+          </div>
+          <div class="col-lg-8 youtube__text">
+            <div class="p-5">
+              <p class="h2">Смотрите нас в YouTube</p>
+              <p>
+                Минеральное сырье поднято. Уравнение малых колебаний, как можно
+                показать с помощью не совсем тривиальных вычислений,
+                трансформирует периодический соленосный артезианский бассейн.
+                Порода, согласно уравнениям Лагранжа,
+              </p>
+              <a href="#">Посмотреть все ролики</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gradient news-main">
       <div class="container">
-        <h1 class="text-center">АФИША</h1>
-        <div class="dates-block">
-          <div class="name">
-            Дата проведения:
-          </div>
-          <input type="text" class="form-control ml-2 dpicker" value="13.09.2020">
-          <div class="mx-2">
-            -
-          </div>
-          <input type="text" class="form-control dpicker" value="15.09.2020">
+        <div class="text-center mt-5">
+          <p class="h1">НОВОСТИ</p>
+          <a href="#" class="txt_18px text-uppercase">Смотреть все новости</a>
         </div>
         <div class="row row-scroll pt-4" id="items-container">
-          <% for(var i = 0; i < 2; i++){ %>
-            <%- include elements/item.ejs %>
-          <% } %>
+          <%- include elements/news.ejs %>
         </div>
       </div>
     </div>
-  </section>
-  <div class="container">
-    <div class="youtube bg-red">
-      <div class="row">
-        <div class="col-lg-4">
-          <a href="" class="youtube__holder">
-            <img class="play" src="./assets/vectors/play.svg">
-            <img class="img" src="./assets/example/pic2.jpg" alt="Вишнёвый сад">
-          </a>
-        </div>
-        <div class="col-lg-8 youtube__text">
-          <div class="p-5">
-            <p class="h2">Смотрите нас в YouTube</p>
-            <p>Минеральное сырье поднято. Уравнение малых колебаний, как можно показать с помощью не совсем тривиальных вычислений, трансформирует периодический соленосный артезианский бассейн. Порода, согласно уравнениям Лагранжа,</p>
-            <a href="#">Посмотреть все ролики</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="bg-gradient news-main">
-    <div class="container">
-      <div class="text-center mt-5">
-        <p class="h1">НОВОСТИ</p>
-        <a href="#" class="txt_18px text-uppercase">Смотреть все новости</a>
-      </div>
-      <div class="row row-scroll pt-4" id="items-container">
-        <%- include elements/news.ejs %>
-      </div>
-    </div>
-  </div>
-  <section id="footer">
-    <%- include modules/footer.ejs %>
-  </section>
-</body>
+    <section id="footer"><%- include modules/footer.ejs %></section>
+  </body>
 </html>

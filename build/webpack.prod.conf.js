@@ -1,13 +1,13 @@
-'use strict';
+"use strict";
 
-const merge = require('webpack-merge'),
-  baseWebpackConfig = require('./webpack.base.conf'),
+const merge = require("webpack-merge"),
+  baseWebpackConfig = require("./webpack.base.conf"),
   ExtractTextPlugin = require("extract-text-webpack-plugin"),
-  UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+  UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 const webpackConfig = merge(baseWebpackConfig, {
   output: {
-    filename: '[name]-[hash].min.js'
+    filename: "[name].min.js",
   },
   module: {
     loaders: [
@@ -16,41 +16,41 @@ const webpackConfig = merge(baseWebpackConfig, {
         use: ExtractTextPlugin.extract({
           fallback: "style-loader",
           use: {
-            loader: 'css-loader',
-            options: { minimize: true }
-          }
-        })
+            loader: "css-loader",
+            options: { minimize: true },
+          },
+        }),
       },
       {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
+          fallback: "style-loader",
           use: [
             {
-              loader: 'css-loader',
-              options: { minimize: true }
+              loader: "css-loader",
+              options: { minimize: true },
             },
-            'sass-loader'
-          ]
-        })
-      }
-    ]
+            "sass-loader",
+          ],
+        }),
+      },
+    ],
   },
   plugins: [
     new ExtractTextPlugin({
-      filename: '[name]-[hash].min.css',
-      allChunks: true
+      filename: "[name].min.css",
+      allChunks: true,
     }),
     new UglifyJsPlugin({
       uglifyOptions: {
         compress: {
-          warnings: false
-        }
+          warnings: false,
+        },
       },
       sourceMap: true,
-      parallel: true
+      parallel: true,
     }),
-  ]
+  ],
 });
 
 module.exports = webpackConfig;
